@@ -3,7 +3,7 @@ MAINTAINER Konstantin (shaytan4@gmail.com)
 
 # Install some tools in the container
 RUN apt-get update -y
-RUN  apt-get install -y atop htop nload iftop wget strace mc vim tmux mlocate man-db iotop zip tar unzip curl gnupg net-tools nmap tcpdump telnet traceroute mtr nginx nmap rsync ftp jq git elinks 
+RUN  apt-get install -y procps atop htop nload iftop wget strace mc vim tmux mlocate man-db iotop zip tar unzip curl gnupg net-tools nmap tcpdump telnet traceroute mtr nginx nmap rsync ftp jq git elinks 
 
 RUN curl -sL https://deb.nodesource.com/setup_12.x  | bash -
 RUN apt-get -y install nodejs
