@@ -7,7 +7,7 @@ RUN  apt-get install -y atop htop nload iftop wget strace mc vim tmux mlocate ma
 
 RUN curl -sL https://deb.nodesource.com/setup_12.x  | bash -
 RUN apt-get -y install nodejs
-RUN apt-get install -y install gcc g++ make
+RUN apt-get install -y gcc g++ make
 #   $ kubectl run multitool --image=shaytan4/multitool --replicas=1
 
 COPY index.html /usr/share/nginx/html/
