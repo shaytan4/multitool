@@ -15,8 +15,9 @@ COPY index.html /usr/share/nginx/html/
 # Copy a custom nginx.conf with log files redirected to stderr and stdout
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY nginx-connectors.conf /etc/nginx/conf.d/
+COPY server.* /certs/
 
-EXPOSE 80 
+EXPOSE 80 443
 
 # Start nginx in foreground:
 CMD ["nginx", "-g", "daemon off;"]
